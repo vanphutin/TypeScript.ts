@@ -11,8 +11,12 @@
 # production
 /build
 
-# misc
+#skip file js
 *.js
+*/*.js
+**/*.js
+
+# misc
 .DS_Store
 .env.local
 .env.development.local
