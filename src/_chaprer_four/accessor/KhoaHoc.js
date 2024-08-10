@@ -15,7 +15,11 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var KhoaHoc = /** @class */ (function () {
     function KhoaHoc(_id, _name, _price) {
-        this._id = _id;
+        // Kiểm tra nếu _id là số, nếu không thì gán giá trị ngẫu nhiên
+        this._id =
+            typeof _id === "number" || typeof _id === "undefined"
+                ? _id
+                : Math.floor(Math.random() * 100);
         this._name = _name;
         this._price = _price;
     }
@@ -26,6 +30,9 @@ var KhoaHoc = /** @class */ (function () {
     //getter - setter
     KhoaHoc.prototype.getId = function () {
         return this._id;
+    };
+    KhoaHoc.prototype.setId = function (_id) {
+        return (this._id = _id);
     };
     KhoaHoc.prototype.getName = function () {
         return this._name;
@@ -70,18 +77,21 @@ var KhoaHocUnica = /** @class */ (function (_super) {
     }
     // @Override
     KhoaHocUnica.prototype.toString = function () {
-        return "".concat(_super.prototype.toString.call(this), ", rating : ").concat(this._soLuongBaiGiang);
+        return "".concat(_super.prototype.toString.call(this), ", soLuongBaiGiang : ").concat(this._soLuongBaiGiang);
     };
     //getter - setter
-    KhoaHocUnica.prototype.getRating = function () {
+    KhoaHocUnica.prototype.getSoLuongBaiGiang = function () {
         return this._soLuongBaiGiang;
     };
-    KhoaHocUnica.prototype.setRating = function (_soLuongBaiGiang) {
+    KhoaHocUnica.prototype.setSoLuongBaiGiang = function (_soLuongBaiGiang) {
         return (this._soLuongBaiGiang = _soLuongBaiGiang);
     };
     return KhoaHocUnica;
 }(KhoaHoc));
-var khoaHocTypeScript = new KhoaHocUdemy(1, "Khoa hoc typesccript ", 200.0, "GOOD");
-var khoaHocDayLamGiau = new KhoaHocUnica(1, "Khoa hoc day lam giau ", 90.9, 20.0);
-console.log(khoaHocTypeScript);
-console.log(khoaHocDayLamGiau);
+// Khởi tạo đối tượng
+var khoaHocTypeScript = new KhoaHocUdemy("random _id", "Khoa hoc TypeScript ", 200.0, "GOOD");
+var khoaHocDayLamGiau = new KhoaHocUnica("_", // Sử dụng as any để bỏ qua lỗi TypeScript
+"Khoa hoc day lam giau ", 90.9, 20.0);
+// In ra thông tin
+console.log(khoaHocTypeScript.toString());
+console.log(khoaHocDayLamGiau.toString());

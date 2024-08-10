@@ -4,7 +4,11 @@ class KhoaHoc {
   private _price: number;
 
   constructor(_id: number, _name: string, _price: number) {
-    this._id = _id;
+    // Kiểm tra nếu _id là số, nếu không thì gán giá trị ngẫu nhiên
+    this._id =
+      typeof _id === "number" || typeof _id === "undefined"
+        ? _id
+        : Math.floor(Math.random() * 100);
     this._name = _name;
     this._price = _price;
   }
@@ -17,6 +21,9 @@ class KhoaHoc {
   //getter - setter
   public getId(): number {
     return this._id;
+  }
+  public setId(_id: number): number {
+    return (this._id = _id);
   }
 
   public getName() {
@@ -71,29 +78,32 @@ class KhoaHocUnica extends KhoaHoc {
 
   // @Override
   toString(): string {
-    return `${super.toString()}, rating : ${this._soLuongBaiGiang}`;
+    return `${super.toString()}, soLuongBaiGiang : ${this._soLuongBaiGiang}`;
   }
 
   //getter - setter
-  public getRating(): number {
+  public getSoLuongBaiGiang(): number {
     return this._soLuongBaiGiang;
   }
-  public setRating(_soLuongBaiGiang: number): number {
+  public setSoLuongBaiGiang(_soLuongBaiGiang: number): number {
     return (this._soLuongBaiGiang = _soLuongBaiGiang);
   }
 }
+
+// Khởi tạo đối tượng
 let khoaHocTypeScript = new KhoaHocUdemy(
-  1,
-  "Khoa hoc typesccript ",
+  "random _id" as any,
+  "Khoa hoc TypeScript ",
   200.0,
   "GOOD"
 );
 let khoaHocDayLamGiau = new KhoaHocUnica(
-  1,
+  "_" as any, // Sử dụng as any để bỏ qua lỗi TypeScript
   "Khoa hoc day lam giau ",
   90.9,
   20.0
 );
 
-console.log(khoaHocTypeScript);
-console.log(khoaHocDayLamGiau);
+// In ra thông tin
+console.log(khoaHocTypeScript.toString());
+console.log(khoaHocDayLamGiau.toString());
