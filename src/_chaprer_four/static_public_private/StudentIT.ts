@@ -1,10 +1,10 @@
 // Student.js
 class StudentIT {
-  _id: number; // use static
-  firstname: string;
-  lastname: string;
-  age: number;
-  gender: boolean;
+  public _id: number; // default is public
+  firstname: string; // default is public
+  private lastname: string;
+  private age: number;
+  protected gender: boolean;
 
   constructor(
     firstname: string,
@@ -18,6 +18,9 @@ class StudentIT {
     this.lastname = lastname;
     this.gender = gender;
     this.age = age;
+  }
+  getAge(): number {
+    return this.age;
   }
 
   toString(): string {
@@ -85,5 +88,11 @@ let SinhVienB = new InformationTechnologyStudentit(
   10,
   10
 );
-console.log(SinhVienA.toString());
-console.log("Điểm trung bình : ", SinhVienA.getDiemTrungBinh());
+// console.log(SinhVienA.toString());
+console.log("Điểm trung bình : ", SinhVienB.getDiemTrungBinh());
+console.log("Age : ", SinhVienB.getAge());
+
+//Error
+console.log("Last name : ", SinhVienB.lastname); //Property 'lastname' is private and only accessible within class 'StudentIT'.ts(2341)
+
+console.log("Gender: ", SinhVienB.gender); //Property 'gender' is protected and only accessible within class 'StudentIT' and its subclasses.ts(2445)
