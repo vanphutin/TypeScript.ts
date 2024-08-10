@@ -65,5 +65,5 @@ var SinhVienB = new InformationTechnologyStudentit(1, "Nguyen Thanh", "Tung", 21
 console.log("Điểm trung bình : ", SinhVienB.getDiemTrungBinh());
 console.log("Age : ", SinhVienB.getAge());
 //Error
-console.log("Last name : ", SinhVienB.lastname); //Property 'lastname' is private and only accessible within class 'StudentIT'.ts(2341)
-console.log("Gender: ", SinhVienB.gender); //Property 'gender' is protected and only accessible within class 'StudentIT' and its subclasses.ts(2445)
+console.error("Last name : ", SinhVienB.lastname); //Property 'lastname' is private and only accessible within class 'StudentIT'.ts(2341)
+console.error("Gender: ", SinhVienB.gender); //Property 'gender' is protected and only accessible within class 'StudentIT' and its subclasses.ts(2445)
