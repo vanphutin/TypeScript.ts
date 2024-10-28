@@ -1,0 +1,102 @@
+[
+  {
+    "ma": "TT04",
+    "ten": "Kẻ truy đuổi trong bóng tối",
+    "nhaXuatBan": "NXB Trẻ",
+    "namXuatBan": 2021,
+    "soTrang": 280,
+    "gia": 75000,
+    "soLuong": 35,
+    "theLoai": "Kinh dị"
+  },
+  {
+    "ma": "SGK01",
+    "ten": "Toán lớp 10",
+    "nhaXuatBan": "NXB Giáo dục",
+    "namXuatBan": 2021,
+    "soTrang": 200,
+    "gia": 50000,
+    "soLuong": 50,
+    "khoiLop": "10"
+  },
+  {
+    "ma": "TT02",
+    "ten": "Cuộc phiêu lưu kỳ thú",
+    "nhaXuatBan": "NXB Kim Đồng",
+    "namXuatBan": 2015,
+    "soTrang": 250,
+    "gia": 60000,
+    "soLuong": 40,
+    "theLoai": "Giả tưởng"
+  },
+  {
+    "ma": "SGK03",
+    "ten": "Lý lớp 11",
+    "nhaXuatBan": "NXB Giáo dục",
+    "namXuatBan": 2020,
+    "soTrang": 220,
+    "gia": 55000,
+    "soLuong": 40,
+    "khoiLop": "11"
+  },
+  {
+    "ma": "SGK05",
+    "ten": "Lịch sử lớp 8",
+    "nhaXuatBan": "NXB Giáo dục",
+    "namXuatBan": 2016,
+    "soTrang": 210,
+    "gia": 47000,
+    "soLuong": 45,
+    "khoiLop": "8"
+  },
+  {
+    "ma": "TT01",
+    "ten": "Truyện trinh thám",
+    "nhaXuatBan": "NXB Văn học",
+    "namXuatBan": 2020,
+    "soTrang": 300,
+    "gia": 70000,
+    "soLuong": 30,
+    "theLoai": "Hình sự"
+  },
+  {
+    "ma": "TT05",
+    "ten": "Hành trình bí ẩn",
+    "nhaXuatBan": "NXB Phụ Nữ",
+    "namXuatBan": 2017,
+    "soTrang": 260,
+    "gia": 68000,
+    "soLuong": 28,
+    "theLoai": "Phiêu lưu"
+  },
+  {
+    "ma": "TT03",
+    "ten": "Chuyện tình mùa thu",
+    "nhaXuatBan": "NXB Thanh Niên",
+    "namXuatBan": 2019,
+    "soTrang": 320,
+    "gia": 80000,
+    "soLuong": 20,
+    "theLoai": "Lãng mạn"
+  },
+  {
+    "ma": "SGK02",
+    "ten": "Văn lớp 12",
+    "nhaXuatBan": "NXB Giáo dục",
+    "namXuatBan": 2019,
+    "soTrang": 180,
+    "gia": 45000,
+    "soLuong": 30,
+    "khoiLop": "12"
+  },
+  {
+    "ma": "SGK04",
+    "ten": "Hoá học lớp 9",
+    "nhaXuatBan": "NXB Giáo dục",
+    "namXuatBan": 2018,
+    "soTrang": 190,
+    "gia": 48000,
+    "soLuong": 25,
+    "khoiLop": "9"
+  }
+]
