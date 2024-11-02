@@ -1,0 +1,161 @@
+{
+  "SoftwareHouse": {
+    "theName": "GlobalTech",
+    "listStaff": [
+      {
+        "type": "Programmer",
+        "thePayrollNumber": 201,
+        "theName": "Alice Nguyen",
+        "theBasicMonthlySalary": 5500,
+        "theLanguage": "Python"
+      },
+      {
+        "type": "Administrator",
+        "thePayrollNumber": 202,
+        "theName": "Bob Tran",
+        "theBasicMonthlySalary": 6200,
+        "theDepartment": "HR"
+      },
+      {
+        "type": "ProjectLeader",
+        "thePayrollNumber": 203,
+        "theName": "Charlie Le",
+        "theBasicMonthlySalary": 7500,
+        "theDepartment": "Development"
+      },
+      {
+        "type": "Programmer",
+        "thePayrollNumber": 204,
+        "theName": "David Vo",
+        "theBasicMonthlySalary": 5300,
+        "theLanguage": "Java"
+      },
+      {
+        "type": "Administrator",
+        "thePayrollNumber": 205,
+        "theName": "Emma Pham",
+        "theBasicMonthlySalary": 6000,
+        "theDepartment": "Finance"
+      },
+      {
+        "type": "ProjectLeader",
+        "thePayrollNumber": 206,
+        "theName": "Frank Ho",
+        "theBasicMonthlySalary": 8000,
+        "theDepartment": "Marketing"
+      },
+      {
+        "type": "Programmer",
+        "thePayrollNumber": 207,
+        "theName": "Grace Do",
+        "theBasicMonthlySalary": 5800,
+        "theLanguage": "JavaScript"
+      },
+      {
+        "type": "Administrator",
+        "thePayrollNumber": 208,
+        "theName": "Hannah Nguyen",
+        "theBasicMonthlySalary": 6100,
+        "theDepartment": "Operations"
+      },
+      {
+        "type": "ProjectLeader",
+        "thePayrollNumber": 209,
+        "theName": "Ian Tran",
+        "theBasicMonthlySalary": 7900,
+        "theDepartment": "IT"
+      },
+      {
+        "type": "Programmer",
+        "thePayrollNumber": 210,
+        "theName": "Jenny Pham",
+        "theBasicMonthlySalary": 5600,
+        "theLanguage": "C++"
+      },
+      {
+        "type": "Administrator",
+        "thePayrollNumber": 211,
+        "theName": "Kevin Le",
+        "theBasicMonthlySalary": 6400,
+        "theDepartment": "Customer Support"
+      },
+      {
+        "type": "Programmer",
+        "thePayrollNumber": 212,
+        "theName": "Laura Doan",
+        "theBasicMonthlySalary": 5700,
+        "theLanguage": "PHP"
+      },
+      {
+        "type": "Administrator",
+        "thePayrollNumber": 213,
+        "theName": "Michael Ho",
+        "theBasicMonthlySalary": 6600,
+        "theDepartment": "Logistics"
+      },
+      {
+        "type": "ProjectLeader",
+        "thePayrollNumber": 214,
+        "theName": "Nina Vo",
+        "theBasicMonthlySalary": 7700,
+        "theDepartment": "Engineering"
+      },
+      {
+        "type": "Programmer",
+        "thePayrollNumber": 215,
+        "theName": "Oscar Truong",
+        "theBasicMonthlySalary": 5900,
+        "theLanguage": "Ruby"
+      },
+      {
+        "type": "Administrator",
+        "thePayrollNumber": 216,
+        "theName": "Paul Nguyen",
+        "theBasicMonthlySalary": 6300,
+        "theDepartment": "Sales"
+      },
+      {
+        "type": "ProjectLeader",
+        "thePayrollNumber": 217,
+        "theName": "Quincy Tran",
+        "theBasicMonthlySalary": 7800,
+        "theDepartment": "Product Development"
+      },
+      {
+        "type": "Programmer",
+        "thePayrollNumber": 218,
+        "theName": "Rachel Hoang",
+        "theBasicMonthlySalary": 6000,
+        "theLanguage": "Swift"
+      },
+      {
+        "type": "Administrator",
+        "thePayrollNumber": 219,
+        "theName": "Sarah Phan",
+        "theBasicMonthlySalary": 6700,
+        "theDepartment": "Legal"
+      },
+      {
+        "type": "Programmer",
+        "thePayrollNumber": 220,
+        "theName": "Tom Bui",
+        "theBasicMonthlySalary": 5800,
+        "theLanguage": "Go"
+      },
+      {
+        "type": "Administrator",
+        "thePayrollNumber": 221,
+        "theName": "Uma Tran",
+        "theBasicMonthlySalary": 6200,
+        "theDepartment": "Research"
+      },
+      {
+        "type": "ProjectLeader",
+        "thePayrollNumber": 222,
+        "theName": "Victor Pham",
+        "theBasicMonthlySalary": 8100,
+        "theDepartment": "Quality Assurance"
+      }
+    ]
+  }
+}
