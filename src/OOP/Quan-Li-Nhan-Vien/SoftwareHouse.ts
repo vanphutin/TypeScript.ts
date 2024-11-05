@@ -96,7 +96,6 @@ class SoftwareHouse {
   }
 
   //tính tổng tiền phải trả cho các nhân viên
-
   public getMonthlySalaryBill(): number {
     let totalSalaryBill = this.listStaff.reduce(
       (accumulator, item) => accumulator + item.getMonthlySalary(),
