@@ -2,69 +2,55 @@ import { Enrolment } from "./Enrolment";
 import { Faculty } from "./Faculty";
 
 export class Section {
-  private sectionNbr: string;
-  private semester: string;
-  private room: string;
-  private faculty: Faculty;
-  private listEnrolls: Set<Enrolment>;
+  public sectionNbr: string;
+  public semester: string;
+  public room: string;
+  public facultyMember: Faculty;
+  public listEnrolls: Set<Enrolment>;
 
-  constructor(
-    sectionNbr: string,
-    semester: string,
-    room: string,
-    faculty: Faculty
+  public constructor(
+    sectionNbr?: string,
+    semester?: string,
+    room?: string,
+    facultyMember?: Faculty,
+    listEnrolls?: Set<Enrolment>
   ) {
-    this.semester = semester;
-    this.sectionNbr = sectionNbr;
-    this.room = room;
-    this.faculty = faculty;
-    this.listEnrolls = new Set<Enrolment>();
-  }
-
-  // Getter và Setter
-  public getSemester(): string {
-    return this.semester;
-  }
-
-  public setSemester(semester: string): void {
-    this.semester = semester;
+    this.sectionNbr = sectionNbr || "";
+    this.semester = semester || "";
+    this.room = room || "";
+    this.facultyMember = facultyMember || new Faculty();
+    this.listEnrolls = listEnrolls || new Set<Enrolment>();
   }
 
   public getSectionNbr(): string {
     return this.sectionNbr;
   }
 
-  public setSectionNbr(sectionNbr: string): void {
-    this.sectionNbr = sectionNbr;
+  public getSemester(): string {
+    return this.semester;
   }
 
   public getRoom(): string {
     return this.room;
   }
 
+  public setSectionNbr(sectionNbr: string): void {
+    this.sectionNbr = sectionNbr;
+  }
+
+  public setSemester(semester: string): void {
+    this.semester = semester;
+  }
+
   public setRoom(room: string): void {
     this.room = room;
   }
 
-  public getFacultyMember(): Faculty {
-    return this.faculty;
-  }
-
-  public setFacultyMember(faculty: Faculty): void {
-    this.faculty = faculty;
-  }
-  public getListEnrolls(): Set<Enrolment> {
-    return this.listEnrolls;
-  }
-  public setListEnrolls(listEnrolls: Set<Enrolment>): void {
-    this.listEnrolls = listEnrolls;
-  }
-  // Phương thức để in thông tin lớp học
   public toString(): string {
-    return `Section { semester: ${this.semester}, sectionNbr: ${
-      this.sectionNbr
-    }, room: ${
+    return `Section: ${this.sectionNbr}, Semester: ${this.semester}, Room: ${
       this.room
-    }, facultyMember: ${this.faculty.getFacultyID()}, numberOfEnrollments: ${this.getListEnrolls()} }`;
+    }, Faculty: ${this.facultyMember.toString()}, Enrolments: ${
+      this.listEnrolls.size
+    }`;
   }
 }

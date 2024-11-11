@@ -1,27 +1,29 @@
-export abstract class Person {
+export class Person {
   protected lastName: string;
   protected firstName: string;
 
-  constructor(lastName: string, firstName: string) {
-    this.firstName = firstName;
-    this.lastName = lastName;
+  public constructor(lastName?: string, firstName?: string) {
+    this.lastName = lastName || "";
+    this.firstName = firstName || "";
   }
 
   public getLastName(): string {
     return this.lastName;
   }
-  public setLastName(lastName: string): void {
-    this.lastName = lastName;
-  }
 
   public getFirstName(): string {
     return this.firstName;
   }
+
+  public setLastName(lastName: string): void {
+    this.lastName = lastName;
+  }
+
   public setFirstName(firstName: string): void {
     this.firstName = firstName;
   }
 
   public toString(): string {
-    return `last name: ${this.lastName}, fisrt name: ${this.firstName} `;
+    return `Person: ${this.firstName} ${this.lastName}`;
   }
 }

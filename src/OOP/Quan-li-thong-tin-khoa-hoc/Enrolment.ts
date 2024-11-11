@@ -1,45 +1,50 @@
 import { Student } from "./Student";
 
 export class Enrolment {
-  private status: string;
-  private grade: string;
-  private numGrade: number;
-  private student: Student;
+  public student: Student;
+  public status: string;
+  public grade: string;
+  public numGrade: number;
 
-  constructor(
+  public constructor(
     student: Student,
-    status: string,
-    grade: string,
-    numGrade: number
+    status?: string,
+    grade?: string,
+    numGrade?: number
   ) {
-    this.status = status;
-    this.grade = grade;
-    this.numGrade = numGrade;
     this.student = student;
+    this.status = status || "";
+    this.grade = grade || "";
+    this.numGrade = numGrade || 0;
   }
 
   public getStatus(): string {
     return this.status;
   }
-  public setStatus(status: string): void {
-    this.status = status;
-  }
 
   public getGrade(): string {
     return this.grade;
-  }
-  public setGrade(grade: string): void {
-    this.grade = grade;
   }
 
   public getNumGrade(): number {
     return this.numGrade;
   }
+
+  public setStatus(status: string): void {
+    this.status = status;
+  }
+
+  public setGrade(grade: string): void {
+    this.grade = grade;
+  }
+
   public setNumGrade(numGrade: number): void {
     this.numGrade = numGrade;
   }
 
   public toString(): string {
-    return `status: ${this.status}, grade: ${this.grade}, numGrade: ${this.numGrade}`;
+    return `Enrolment: ${this.student.toString()}, Status: ${
+      this.status
+    }, Grade: ${this.grade}, Numeric Grade: ${this.numGrade}`;
   }
 }

@@ -1,0 +1,135 @@
+{
+  "persons": [
+    {
+      "lastName": "Nguyen",
+      "firstName": "Anh"
+    },
+    {
+      "lastName": "Tran",
+      "firstName": "Binh"
+    }
+  ],
+  "students": [
+    {
+      "lastName": "Nguyen",
+      "firstName": "Anh",
+      "studentID": "S12345",
+      "yearMatriculated": 2020
+    },
+    {
+      "lastName": "Tran",
+      "firstName": "Binh",
+      "studentID": "S54321",
+      "yearMatriculated": 2019
+    }
+  ],
+  "faculties": [
+    {
+      "lastName": "Le",
+      "firstName": "Chau",
+      "facultyID": "F001",
+      "office": "Room 101"
+    },
+    {
+      "lastName": "Pham",
+      "firstName": "Dung",
+      "facultyID": "F002",
+      "office": "Room 102"
+    }
+  ],
+  "enrolments": [
+    {
+      "studentID": "S12345",
+      "status": "Active",
+      "grade": "A",
+      "numGrade": 4.0
+    },
+    {
+      "studentID": "S54321",
+      "status": "Completed",
+      "grade": "B+",
+      "numGrade": 3.5
+    }
+  ],
+  "sections": [
+    {
+      "sectionNbr": "SEC101",
+      "semester": "Fall 2023",
+      "room": "B201",
+      "facultyMember": {
+        "lastName": "Le",
+        "firstName": "Chau",
+        "facultyID": "F001",
+        "office": "Room 101"
+      },
+      "listEnrolls": [
+        {
+          "student": {
+            "lastName": "Nguyen",
+            "firstName": "Anh",
+            "studentID": "S12345",
+            "yearMatriculated": 2020
+          },
+          "status": "Active",
+          "grade": "A",
+          "numGrade": 4.0
+        },
+        {
+          "student": {
+            "lastName": "Tran",
+            "firstName": "Binh",
+            "studentID": "S54321",
+            "yearMatriculated": 2019
+          },
+          "status": "Completed",
+          "grade": "B+",
+          "numGrade": 3.5
+        }
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "courseNbr": "CS101",
+      "courseTitle": "Introduction to Programming",
+      "credits": 3,
+      "sections": [
+        {
+          "sectionNbr": "SEC101",
+          "semester": "Fall 2023",
+          "room": "B201",
+          "facultyMember": {
+            "lastName": "Le",
+            "firstName": "Chau",
+            "facultyID": "F001",
+            "office": "Room 101"
+          },
+          "listEnrolls": [
+            {
+              "student": {
+                "lastName": "Nguyen",
+                "firstName": "Anh",
+                "studentID": "S12345",
+                "yearMatriculated": 2020
+              },
+              "status": "Active",
+              "grade": "A",
+              "numGrade": 4.0
+            },
+            {
+              "student": {
+                "lastName": "Tran",
+                "firstName": "Binh",
+                "studentID": "S54321",
+                "yearMatriculated": 2019
+              },
+              "status": "Completed",
+              "grade": "B+",
+              "numGrade": 3.5
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
